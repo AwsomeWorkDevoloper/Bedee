@@ -1,0 +1,36 @@
+@import './variables';
+
+.navbar {
+    border-radius: 10px;
+    border: 1px solid $primary;
+    width: 97vw;
+    padding: .65em;
+
+    position: absolute;
+    top: 1em;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .leftSide {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        h2 {
+            color: $primary;
+            font-weight: 300;
+            margin-left: 1em;
+        }
+    }
+
+    .rightSide {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 1.5em;
+        font-size: larger;
+    }
+}
